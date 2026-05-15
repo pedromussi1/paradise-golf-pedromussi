@@ -17,17 +17,17 @@ I also added a small line under the toggle that shows the actual date range for 
 
 ## Color and visual choices
 
-The brand green (`#004D00`) shows up in different areas of the website like the header bar, section heading, active season button, price amounts, and "See benefits" buttons.
+The brand green `#004D00` shows up in different areas of the website like the header bar, section heading, active season button, price amounts, and "See benefits" buttons.
 
 I tried to use it purposefully by applying it to things that will catch the user's eyes like the price, primary action, and brand instead of applying it everywhere.
 
-For the page background I went with `#f4f3ef`, a light cream. I started with pure white and noticed that the page felt flat. The light cream gives the white cards better contrast. For the season section I tried to create a mix of colors that fit nicely together and look natural when hovering and clicking them, by using a warm border color (`#e2e2e0`) and a faintly green-tinted hover color for the season buttons (`#eef0ec`).
+For the page background I went with `#f4f3ef`, a light cream. I started with pure white and noticed that the page felt flat. The light cream gives the white cards better contrast. For the season section I tried to create a mix of colors that fit nicely together and look natural when hovering and clicking them, by using a warm border color `#e2e2e0` and a faintly green-tinted hover color for the season buttons `#eef0ec`.
 
 ## Small things I had to fix along the way
 
 - **The "See benefits" buttons drifted out of vertical alignment** when some cards were expanded and others were not. This was because the card taglines had different line counts, and the price block height changed between regular pricing and the Monthly "Seasonal only" state. Fixed it with `min-height` on both the tagline and the price block, and `align-items: flex-start` on the card row so cards take their natural height instead of stretching to match each other.
 - **The footer used to float in the middle of the page** when all the cards were collapsed. Used the flexbox sticky footer pattern (`min-height: 100vh` on body, `flex: 1` on main) so the footer always sits at the actual bottom.
-- **The card hover effect.** This one took me a few tries. I was not sure which combination of styles would feel right on the cards or how they should respond to being hovered over. I tried a small lift on its own (`translateY(-2px)`), a soft shadow on its own (`box-shadow`), and both together. The lift alone felt flat and the shadow alone felt static. Both together gave the right "the card rises slightly off the page" feeling, so that is what I kept.
+- **The card hover effect.** This one took me a few tries. I was not sure which combination of styles would feel right on the cards or how they should respond to being hovered over. I tried a small lift on its own (`translateY(-2px)`), a soft shadow on its own `box-shadow`, and both together. The lift alone felt flat and the shadow alone felt static. Both together gave the right "the card rises slightly off the page" feeling, so that is what I kept.
 
 ## How the JavaScript works
 
