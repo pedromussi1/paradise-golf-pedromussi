@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paradise Golf — Memberships</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="logo">Paradise Golf</h1>
+      <p class="tagline">Memberships</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="intro">
+      <h2>Find the membership that fits how you play.</h2>
+      <p>
+        Pricing changes by season. Pick which season fits your play,
+        then tap a card to see what's included.
+      </p>
+    </section>
+
+    <div class="season-toggle" role="tablist" aria-label="Season">
+      <button class="season-btn is-active" data-season="yearRound">Year-Round</button>
+      <button class="season-btn" data-season="summer">Summer</button>
+      <button class="season-btn" data-season="winter">Winter</button>
+    </div>
+    <p class="season-dates" id="season-dates"></p>
+
+    <section class="cards" aria-live="polite"></section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Paradise Golf</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
