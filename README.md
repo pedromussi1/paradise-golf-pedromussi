@@ -1,6 +1,6 @@
-# Paradise Golf — Memberships
+# Paradise Golf - Memberships
 
-An interactive page for Paradise Golf's four membership tiers (Silver, Gold, Platinum, Monthly). Built with plain HTML, CSS, and vanilla JavaScript. No frameworks, no build step.
+An interactive page for Paradise Golf's four membership tiers (Silver, Gold, Platinum, Monthly). Built with plain HTML, CSS, and vanilla JavaScript.
 
 ## How to run
 
@@ -27,7 +27,7 @@ For the page background I went with `#f4f3ef`, a light cream. I started with pur
 
 - **The "See benefits" buttons drifted out of vertical alignment** when some cards were expanded and others were not. This was because the card taglines had different line counts, and the price block height changed between regular pricing and the Monthly "Seasonal only" state. Fixed it with `min-height` on both the tagline and the price block, and `align-items: flex-start` on the card row so cards take their natural height instead of stretching to match each other.
 - **The footer used to float in the middle of the page** when all the cards were collapsed. Used the flexbox sticky footer pattern (`min-height: 100vh` on body, `flex: 1` on main) so the footer always sits at the actual bottom.
-- **Iterated on the card hover effect.** This one took me a few tries. I was not sure which combination of styles would feel right on the cards or how they should respond to being hovered over. I tried a small lift on its own (`translateY(-2px)`), a soft shadow on its own (`box-shadow`), and both together. The lift alone felt flat and the shadow alone felt static. Both together gave the right "the card rises slightly off the page" feeling, so that is what I kept.
+- **The card hover effect.** This one took me a few tries. I was not sure which combination of styles would feel right on the cards or how they should respond to being hovered over. I tried a small lift on its own (`translateY(-2px)`), a soft shadow on its own (`box-shadow`), and both together. The lift alone felt flat and the shadow alone felt static. Both together gave the right "the card rises slightly off the page" feeling, so that is what I kept.
 
 ## How the JavaScript works
 
@@ -37,7 +37,7 @@ The data lives in `data.js` as a hardcoded `TIERS` array. I separated it from th
 
 ## What I would improve with more time
 
-- **A real "help me choose" recommender.** Right now the user does the comparing themselves. A short flow asking "how often do you play and where?" and then highlighting the best-fit tier would meaningfully help users who are not sure where to start.
-- **Persist the user's season choice.** Right now the toggle resets to Year-Round every time the page loads. Saving the last choice with `localStorage` would let returning visitors see the information for the season they previously selected in their session.
-- **A real call-to-action on each card.** Each card only has a "See benefits" button that shows information about the different plans. In a real product, there would be a button to actually choose the plan and start signup. At the moment, the page helps the user decide but does not help them act on the decision.
+- **A real recommendation:** Right now the user does the comparing themselves. A short flow asking "how often do you play and where?" and then highlighting the best-fit tier would meaningfully help users who are not sure where to start.
+- **Save the user's season choice:** Right now the toggle resets to Year-Round every time the page loads. Saving the last choice with `localStorage` would let returning visitors see the information for the season they previously selected in their session.
+- **A real action on each card:** Each card only has a "See benefits" button that shows information about the different plans. In a real product, there would be a button to actually choose the plan and start signup. At the moment, the page helps the user decide but does not help them act on the decision.
 
