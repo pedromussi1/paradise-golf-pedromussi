@@ -4,7 +4,8 @@ An interactive page for Paradise Golf's four membership tiers (Silver, Gold, Pla
 
 ## How to run
 
-Open `index.html` in any modern browser. That's it.
+1. Clone the repo and download it as a ZIP.
+2. Open index.htmlo on a browser.
 
 ## The main decision: how to present the data
 
